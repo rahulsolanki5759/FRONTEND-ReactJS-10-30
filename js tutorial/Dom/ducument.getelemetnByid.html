@@ -1,0 +1,29 @@
+
+<head>
+    <style>
+        button
+        {
+            padding: 10px 30px;
+        }
+    </style>
+    
+</head>
+<body id="bg" onload="test()">
+    <center>
+        <p id="nm"></p>
+        <button type="button " onclick="nm()" id="btn">print name</button>
+    </center>
+
+<script>
+    function test(){
+        document.getElementById("bg").style=" background-color:blue";
+    }
+    function nm(){
+        var name="rahul solanki";
+        document.getElementById('nm').innerHTML="your name is:"+name;
+        document.getElementById("nm").style="color:white; transition:2s ease all; font-size:25px";
+        document.getElementById("btn").style="color:white;transition:2s ease all; border:white; background-color:red;"        
+
+    }
+</script>
+</body>
